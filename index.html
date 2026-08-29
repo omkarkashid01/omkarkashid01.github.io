@@ -1,64 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-        .profile {
-            max-width: 700px;
-            margin: 60px auto;
-            background: white;
-            padding: 40px;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-        .profile img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #333;
-            margin-bottom: 20px;
-        }
-        h1 { font-size: 32px; margin-bottom: 10px; }
-        .role { color: #666; font-size: 18px; margin-bottom: 20px; }
-        .bio { line-height: 1.6; margin-bottom: 25px; }
-        .links a {
-            display: inline-block;
-            text-decoration: none;
-            color: white;
-            background: #333;
-            padding: 10px 20px;
-            margin: 5px;
-            border-radius: 8px;
-        }
-        .links a:hover { background: #555; }
-        footer { margin-top: 30px; color: #777; font-size: 14px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Omkar Kashid — Mathematics student and aspiring problem solver." />
+  <title>Omkar Kashid | Mathematics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="profile">
-        <img src="profile.jpg" alt="Profile Photo">
-        <h1>Your Name</h1>
-        <p class="role">Student | Developer | Researcher</p>
-        <p class="bio">
-            Hello! I am a student interested in technology,
-            programming and research. Welcome to my personal profile page.
+  <div class="cursor-glow"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#home">OK<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Mathematics • Curiosity • Growth</p>
+        <h1>Hi, I'm <em>Omkar</em><br />Kashid.</h1>
+        <p class="hero-text">
+          A Mathematics student who enjoys exploring ideas, solving problems,
+          and learning something new every day.
         </p>
-        <div class="links">
-            <a href="https://github.com/" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-            <a href="mailto:your@email.com">Email</a>
+        <div class="hero-actions">
+          <a class="btn primary" href="#about">Discover More <span>↓</span></a>
+          <a class="btn secondary" href="https://instagram.com/omkar_kashid_05" target="_blank" rel="noopener noreferrer">
+            Instagram ↗
+          </a>
         </div>
-        <footer>© 2026 Your Name</footer>
-    </div>
+        <div class="quick-stats">
+          <div><strong>M.Sc.</strong><span>Mathematics</span></div>
+          <div><strong>∞</strong><span>Curiosity</span></div>
+          <div><strong>05</strong><span>Signature</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="image-frame">
+          <div class="frame-line"></div>
+          <img src="assets/profile.jpg" alt="Portrait of Omkar Kashid" />
+        </div>
+        <div class="floating-card">
+          <span class="math-symbol">∑</span>
+          <div>
+            <small>Currently pursuing</small>
+            <strong>M.Sc. Mathematics</strong>
+          </div>
+        </div>
+        <div class="vertical-text">OMKAR KASHID • 2026</div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> A little about me</p>
+        <h2>Where <em>logic</em><br />meets curiosity.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <div class="card-number">01</div>
+          <h3>Mathematics</h3>
+          <p>
+            I am pursuing an M.Sc. in Mathematics, building a deeper
+            understanding of mathematical thinking, concepts, and problem solving.
+          </p>
+        </div>
+        <div class="about-card glass reveal">
+          <div class="card-number">02</div>
+          <h3>Learning</h3>
+          <p>
+            I believe every difficult problem is an opportunity to understand
+            something better. I enjoy learning through questions and exploration.
+          </p>
+        </div>
+        <div class="quote-card reveal">
+          <div class="quote-mark">“</div>
+          <p>Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.</p>
+          <span>— William Paul Thurston</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests" class="section interests">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> What drives me</p>
+        <h2>Think. Solve.<br /><em>Discover.</em></h2>
+      </div>
+      <div class="interest-list">
+        <article class="interest reveal">
+          <span class="interest-icon">∫</span>
+          <div><h3>Mathematical Thinking</h3><p>Exploring patterns, structures, proofs, and elegant solutions.</p></div>
+          <span class="arrow">↗</span>
+        </article>
+        <article class="interest reveal">
+          <span class="interest-icon">π</span>
+          <div><h3>Problem Solving</h3><p>Breaking complex questions into simple, understandable steps.</p></div>
+          <span class="arrow">↗</span>
+        </article>
+        <article class="interest reveal">
+          <span class="interest-icon">∞</span>
+          <div><h3>Continuous Learning</h3><p>Growing through new ideas, experiences, and perspectives.</p></div>
+          <span class="arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-box reveal">
+        <p class="eyebrow"><span></span> Let's connect</p>
+        <h2>Say <em>hello.</em></h2>
+        <p>Want to connect, collaborate, or simply talk about mathematics?</p>
+        <a class="big-link" href="https://instagram.com/omkar_kashid_05" target="_blank" rel="noopener noreferrer">
+          @omkar_kashid_05 <span>↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Omkar Kashid</span>
+    <span>Made with curiosity <b>∞</b></span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
