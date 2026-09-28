@@ -137,9 +137,15 @@
             <span><b>Roll No.</b>06</span>
             <span><b>Academic Year</b>2026–27</span>
           </div>
-          <a class="btn primary" href="Seminar-2.pdf" target="_blank" rel="noopener">Open Seminar PDF <span>↗</span></a>
+          <div class="seminar-buttons">
+            <a class="btn primary" href="Seminar-2.pdf" target="_blank" rel="noopener">Open Seminar PDF 1 <span>↗</span></a>
+            <a class="btn secondary" href="Matrix-RM.pdf" target="_blank" rel="noopener">Open Seminar PDF 2 <span>↗</span></a>
+          </div>
         </div>
-
+        <div class="pdf-preview">
+          <div class="pdf-top"><span>SEMINAR • PDF</span><span>10 PAGES</span></div>
+          <iframe src="Seminar-2.pdf#page=1&view=FitH" title="Omkar Kashid Seminar PDF"></iframe>
+        </div>
       </div>
     </section>
 
@@ -154,17 +160,6 @@
       </div>
     </section>
   </main>
-
-  <div class="pdf-modal" id="pdfModal" aria-hidden="true">
-    <div class="pdf-modal-backdrop" data-close-pdf></div>
-    <div class="pdf-modal-content" role="dialog" aria-modal="true" aria-label="Seminar PDF">
-      <div class="pdf-modal-header">
-        <strong>Omkar Kashid — Seminar</strong>
-        <button class="pdf-close" id="closePdf" aria-label="Close PDF">×</button>
-      </div>
-      <iframe src="" id="seminarPdf" title="Omkar Kashid Seminar PDF"></iframe>
-    </div>
-  </div>
 
   <footer>
     <span>© <span id="year"></span> Omkar Kashid</span>
