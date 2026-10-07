@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academic seminar presentations by Omkar Kashid." />
+  <title>Seminars | Omkar Kashid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">OK<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#interests">Interests</a>
+      <a href="seminars.html" class="active">Seminars</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="seminars-page">
+    <section class="seminars-hero section">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> Academic Work</p>
+        <h1>Seminar <em>Presentations.</em></h1>
+        <p class="seminars-intro">
+          A collection of my academic seminar presentations. Select any topic
+          below to open its complete PDF.
+        </p>
+      </div>
+    </section>
+
+    <section class="section seminar-library" aria-label="Seminar presentations">
+      <article class="seminar-item reveal">
+        <div class="seminar-item-number">01</div>
+        <div class="seminar-item-content">
+          <span class="seminar-item-tag">Linear Programming</span>
+          <h2>Formulation of Linear Programming Problems</h2>
+          <p>From word problems to mathematical models: decision variables, objective functions, constraints, and non-negativity restrictions.</p>
+          <div class="seminar-item-meta"><span>M.Sc. Mathematics</span><span>2026–27</span></div>
+        </div>
+        <a class="btn primary seminar-open" href="NA.pdf" target="_blank" rel="noopener">Open PDF <span>↗</span></a>
+      </article>
+
+      <article class="seminar-item reveal">
+        <div class="seminar-item-number">02</div>
+        <div class="seminar-item-content">
+          <span class="seminar-item-tag">Numerical / Linear Algebra</span>
+          <h2>Solving Linear Equations by Crout's Method</h2>
+          <p>A worked solution using the Crout factorization A = LU, followed by forward and backward substitution.</p>
+          <div class="seminar-item-meta"><span>M.Sc. Mathematics</span><span>2026–27</span></div>
+        </div>
+        <a class="btn primary seminar-open" href="LA.pdf" target="_blank" rel="noopener">Open PDF <span>↗</span></a>
+      </article>
+
+      <article class="seminar-item reveal">
+        <div class="seminar-item-number">03</div>
+        <div class="seminar-item-content">
+          <span class="seminar-item-tag">Linear Algebra</span>
+          <h2>Computing Large Determinants Using Row-Reductions</h2>
+          <p>Seminar presentation on computing determinants using elementary row operations, Gaussian elimination, and triangular matrices.</p>
+          <div class="seminar-item-meta"><span>M.Sc. Mathematics</span><span>2026–27</span></div>
+        </div>
+        <a class="btn secondary seminar-open" href="Seminar-2.pdf" target="_blank" rel="noopener">Open PDF <span>↗</span></a>
+      </article>
+
+      <article class="seminar-item reveal">
+        <div class="seminar-item-number">04</div>
+        <div class="seminar-item-content">
+          <span class="seminar-item-tag">Research Methodology</span>
+          <h2>LaTeX Matrix Environments &amp; Applications</h2>
+          <p>Syntax, code tables, layout structuring, and practical uses of LaTeX matrix environments across scientific research.</p>
+          <div class="seminar-item-meta"><span>Academic Writing</span><span>Seminar</span></div>
+        </div>
+        <a class="btn secondary seminar-open" href="Matrix-RM.pdf" target="_blank" rel="noopener">Open PDF <span>↗</span></a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Omkar Kashid</span>
+    <span>Academic Seminars <b>∞</b></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
