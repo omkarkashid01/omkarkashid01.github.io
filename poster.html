@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Initial Value Problem and Its Formulation poster by Omkar Kashid." />
+  <title>Poster | Omkar Kashid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .poster-page { width:min(1180px, calc(100% - 32px)); margin:50px auto 90px; }
+    .poster-heading { margin-bottom:28px; }
+    .poster-image { display:block; width:100%; height:auto; border-radius:12px; border:1px solid rgba(255,255,255,.16); box-shadow:0 24px 70px rgba(0,0,0,.35); }
+    .poster-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:24px; }
+  </style>
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <header class="navbar">
+    <a class="brand" href="index.html">OK<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#interests">Interests</a>
+      <a href="seminars.html">Seminars</a>
+      <a href="poster.html" class="active">Poster</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+  <main class="poster-page">
+    <div class="section-heading poster-heading">
+      <p class="eyebrow"><span></span> Academic Work</p>
+      <h1>My <em>Poster.</em></h1>
+      <p class="seminars-intro">Initial Value Problem and Its Formulation in Ordinary Differential Equations</p>
+    </div>
+    <img class="poster-image" src="assets/ivp-poster.png" alt="Poster: Initial Value Problem and Its Formulation in Ordinary Differential Equations" />
+    <div class="poster-actions">
+      <a class="btn primary" href="assets/ivp-poster.png" target="_blank" rel="noopener">Open Full Size <span>↗</span></a>
+      <a class="btn secondary" href="index.html">Back to Home</a>
+    </div>
+  </main>
+  <footer>
+    <span>© <span id="year"></span> Omkar Kashid</span>
+    <span>Academic Poster <b>∞</b></span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
